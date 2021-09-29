@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import App from "./components/App"
 import contact from "./contact.js"
 
-console.log(contact);
+const card1 = contact[0];
 
 ReactDOM.render(
-  <App />, 
+  <App 
+    
+  />, 
   document.getElementById("root")
 );
 
