@@ -4,11 +4,31 @@ import App from "./components/App"
 import contact from "./contact.js"
 
 const card1 = contact[0];
+const card2 = contact[1];
+const card3 = contact[2];
 
 ReactDOM.render(
-  <App 
-    
-  />, 
+  <div>
+    <h1 className="heading">My Contacts</h1>
+    <App 
+    name={card1.name}
+    img={card1.imgURL}
+    phone={card1.phone}
+    email={card1.email}
+  />
+    <App 
+    name={card2.name}
+    img={card2.imgURL}
+    phone={card2.phone}
+    email={card2.email}
+  />
+      <App 
+    name={card3.name}
+    img={card3.imgURL}
+    phone={card3.phone}
+    email={card3.email}
+  />
+  </div>, 
   document.getElementById("root")
 );
 

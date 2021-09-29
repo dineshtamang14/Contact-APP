@@ -1,20 +1,19 @@
 import React from "react";
 
-function App(){
+function App(props){
     return (
         <div>
-            <h1 className="heading">My Contacts</h1>
             <div className="card">
                 <div className="top">
-                    <h1 className="name">Name</h1>
+                    <h1 className="name">{props.name}</h1>
                     <img className="circle-img"
-                    src=""
-                    alt=""
+                    src={props.img}
+                    alt="avatar_img"
                 />
                 </div>
                 <div className="bottom">
-                    <p className="info">phone</p>
-                    <p className="info">email</p>
+                    <p className="info">{props.phone}</p>
+                    <p className="info">{props.email}</p>
                 </div>
             </div>
         </div>
