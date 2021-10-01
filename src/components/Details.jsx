@@ -2,7 +2,7 @@ import React from "react";
 
 function Details(props){
     return (
-        <p className="info">{props.email}</p>
+        <p className="info">{props.detail}</p>
     );
 }
 
