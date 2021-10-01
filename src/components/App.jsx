@@ -1,21 +1,29 @@
 import React from "react";
+import Card from "./Card"
+import contact from "../contact"
 
 function App(props){
     return (
         <div>
-            <div className="card">
-                <div className="top">
-                    <h1 className="name">{props.name}</h1>
-                    <img className="circle-img"
-                    src={props.img}
-                    alt="avatar_img"
-                />
-                </div>
-                <div className="bottom">
-                    <p className="info">{props.phone}</p>
-                    <p className="info">{props.email}</p>
-                </div>
-            </div>
+            <h1 className="heading">My Contacts</h1>
+            <Card 
+                name = {contact[0].name}
+                img = {contact[0].imgURL}
+                tel = {contact[0].phone}
+                email = {contact[0].email}
+            />
+            <Card 
+                name = {contact[1].name}
+                img = {contact[1].imgURL}
+                tel = {contact[1].phone}
+                email = {contact[1].email}
+            />
+            <Card 
+                name = {contact[2].name}
+                img = {contact[2].imgURL}
+                tel = {contact[2].phone}
+                email = {contact[2].email}
+            />
         </div>
     );   
 }
